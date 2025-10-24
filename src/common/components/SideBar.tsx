@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import HomeIcon from '@mui/icons-material/Home';
+import InfoIcon from '@mui/icons-material/Info';
 import PublicIcon from '@mui/icons-material/Public';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -26,6 +27,7 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
   { title: 'Home', path: '/', icon: <HomeIcon /> },
   { title: 'Countries', path: '/countries', icon: <PublicIcon /> },
+  { title: 'About', path: '/about', icon: <InfoIcon /> },
 ];
 
 const drawerWidth = 240;
