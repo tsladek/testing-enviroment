@@ -71,7 +71,7 @@ export const PermanentDrawerLeft = () => {
         <Toolbar />
         <Divider />
         <List>
-          {menuItems.map((item: MenuItem, index: number) => (
+          {menuItems.map((item: MenuItem) => (
             <ListItem key={item.title} disablePadding>
               <ListItemButton onClick={() => navigate(item.path)}>
                 <ListItemIcon>{item.icon}</ListItemIcon>

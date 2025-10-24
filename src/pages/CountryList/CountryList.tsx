@@ -14,6 +14,7 @@ import TableRow from '@mui/material/TableRow';
 import { useQuery } from '@tanstack/react-query';
 
 import { getCountries } from '../../services/country-service';
+import { Country } from '../../types/country.type';
 
 const CountryList = () => {
   const [page, setPage] = useState(0);
@@ -95,7 +96,7 @@ const CountryList = () => {
                 </TableRow>
               )}
               {!isFetching && paginatedData.length > 0
-                ? paginatedData.map((country: any, index: number) => (
+                ? paginatedData.map((country: Country, index: number) => (
                     <TableRow
                       key={country.cca3 || index}
                       sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
