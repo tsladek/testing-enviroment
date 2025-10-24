@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import PermanentDrawerLeft from './common/components/SideBar';
+import AboutPage from './pages/About/AboutPage';
 import CountryList from './pages/CountryList/CountryList';
 import HomePage from './pages/Home/HomePage';
 
@@ -48,6 +49,7 @@ function App() {
             <Route path="/" element={<PermanentDrawerLeft />}>
               <Route path="/" element={<HomePage />} />
               <Route path="countries" element={<CountryList />} />
+              <Route path="about" element={<AboutPage />} />
             </Route>
           </Routes>
         </BrowserRouter>
